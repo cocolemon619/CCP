@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "chromeTest",
+    "version": "1.0",
+    "description": "Add a button to menuHeader",
+    "permissions": ["https://navi.mars.kanazawa-it.ac.jp/portal/student/KITP00500"],
+    "action": {
+      "default_popup": "chartTest.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://navi.mars.kanazawa-it.ac.jp/portal/student/KITP0010001"],
+        "matches1":["https://navi.mars.kanazawa-it.ac.jp/portal/student/KITP00510?"],
+        "matches2":["https://navi.mars.kanazawa-it.ac.jp/portal/student/KITP00500"],
+        "js": ["content3.js"]
+      }
+    ]
+  }
